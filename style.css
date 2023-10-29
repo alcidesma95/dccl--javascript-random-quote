@@ -1,0 +1,102 @@
+@font-face {
+  font-family: outfit;
+  src: url("assets/font/outfit.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: outfit, system-ui
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #111729;
+}
+
+main{
+  background-image: url('assets/bg-image-random-quote.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-color: #20293A;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 40%;
+  border-radius: 15px;
+  color: #8B97AA;
+}
+.author_tags{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.author{
+  color: #E3E8EF;
+  font-size: 1rem;
+}
+
+.tags{
+  display: flex;
+  gap: 5px;
+}
+
+.tags_item{
+  font-size: 0.625rem;
+  color: #6466E9;
+  padding: 5px 10px;
+  border: 1px solid #6466E9;
+  border-radius: 15px;
+}
+.quote{
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+.actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border:2px solid #4A5567 ;
+  border-radius: 15px;
+}
+
+.btn{
+  all: unset;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.btn:hover{
+  background-color: #20293A;
+  
+}
+.btn:first-child{
+  border-right: 2px solid #4A5567;
+}
+
+.btn:first-child:hover{
+  border-radius: 15px 0 0 15px;
+}
+
+.btn:last-child:hover{
+  border-radius: 0 15px 15px 0;
+}
